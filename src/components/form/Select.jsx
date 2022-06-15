@@ -4,7 +4,7 @@ import styles from './Select.module.css'
     return(
         <div className={styles.form_control}>
             <label htmlFor={name}>{text}:</label>
-            <select id={name} name={name}>
+            <select id={name} name={name} onChange={handleOnChange} value={value || ''}>
                 <option value="">Selecione uma opção</option>
                 {options.map((option) => (
                     <option value={option.id} key={option.id}>{option.name}</option>
