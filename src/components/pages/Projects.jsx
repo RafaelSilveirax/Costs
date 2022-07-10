@@ -50,6 +50,7 @@ export function Projects(){
             .then(() => {
                 setProjects(projects.filter((project) => project.id !== id))
                 setProjectMessage('Projeto removido com sucesso!')
+                console.log("teste")
             })
             .catch(err => console.log(err))
         }
